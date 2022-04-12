@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a74a381b-63b5-4f4d-9c80-5c8834b254fb" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/onNewStripeSubscription.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/SubscriptionRepository.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/initDb.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    <list default="true" id="a74a381b-63b5-4f4d-9c80-5c8834b254fb" name="Changes" comment="done the basic setup of db and function to be called when subscription hook happens">
+      <change afterPath="$PROJECT_DIR$/routes/stripe-webhook.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/app.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649769916425</updated>
-      <workItem from="1649769917567" duration="4289000" />
+      <workItem from="1649769917567" duration="5192000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1649770297994</created>
@@ -110,7 +103,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649770297994</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="done the basic setup of db and function to be called when subscription hook happens">
+      <created>1649774815493</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649774815493</updated>
+    </task>
+    <task id="LOCAL-00003" summary="done the basic setup of db and function to be called when subscription hook happens">
+      <created>1649774909702</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649774909702</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +139,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="done the basic setup of db and function to be called when subscription hook happens" />
+    <option name="LAST_COMMIT_MESSAGE" value="done the basic setup of db and function to be called when subscription hook happens" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

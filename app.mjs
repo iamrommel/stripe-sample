@@ -6,7 +6,7 @@ import logger from 'morgan'
 import { fileURLToPath } from 'url'
 import { dirname } from 'path'
 import { initDb } from './utils/initDb.mjs'
-import { onNewStripeSubscription } from './libs/onNewStripeSubscription.mjs'
+import { stripeWebhook } from './routes/stripe-webhook.mjs'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -14,6 +14,7 @@ const __dirname = dirname(__filename)
 initDb().catch((err) => console.log(`DB ERROR: ${err}`))
 
 const app = express()
+
 app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
@@ -24,10 +25,6 @@ app.get('/', (req, res, next) => {
   res.render('index', { title: 'Express' })
 })
 
-app.get('/webhook/stripe', async (req, res, next) => {
-  const result = await onNewStripeSubscription()
-
-  res.json(result)
-})
+app.get('stripe/webhooks', express.raw({ type: 'application/json' }), stripeWebhook)
 
 export default app

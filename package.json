@@ -5,17 +5,21 @@
   "type": "module",
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www.mjs"
+    "dev": "concurrently \"nodemon ./bin/www.mjs\" \"npm:stripe\"",
+    "stripe": "stripe listen --forward-to localhost:5002/stripe/webhooks --skip-verify"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^16.0.0",
-    "express": "~4.16.1",
+    "express": "^4.17.3",
     "mongoose": "^6.2.10",
     "morgan": "~1.9.1",
     "nodemon": "^2.0.15",
     "prettier": "^2.6.2",
     "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0"
   }
 }
