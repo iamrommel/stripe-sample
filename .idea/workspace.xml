@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a74a381b-63b5-4f4d-9c80-5c8834b254fb" name="Changes" comment="done the basic setup of db and function to be called when subscription hook happens">
-      <change afterPath="$PROJECT_DIR$/routes/stripe-webhook.mjs" afterDir="false" />
+    <list default="true" id="a74a381b-63b5-4f4d-9c80-5c8834b254fb" name="Changes" comment="udpated the code">
+      <change afterPath="$PROJECT_DIR$/utils/stripe.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/app.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/www.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/onNewStripeSubscription.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/libs/customerSubscriptionCreated.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/stripe-webhook.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/routes/stripe-webhook.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/SubscriptionRepository.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/utils/SubscriptionRepository.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +74,9 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
+    <configuration name="stripe | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/stripe.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -83,6 +90,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
+        <item itemvalue="HTTP Request.stripe | #2" />
       </list>
     </recent_temporary>
   </component>
@@ -94,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649769916425</updated>
-      <workItem from="1649769917567" duration="5192000" />
+      <workItem from="1649769917567" duration="9371000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1649770297994</created>
@@ -117,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649774909702</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="udpated the code">
+      <created>1649775866344</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649775866344</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +155,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="done the basic setup of db and function to be called when subscription hook happens" />
-    <option name="LAST_COMMIT_MESSAGE" value="done the basic setup of db and function to be called when subscription hook happens" />
+    <MESSAGE value="udpated the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="udpated the code" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -15,16 +15,15 @@ initDb().catch((err) => console.log(`DB ERROR: ${err}`))
 
 const app = express()
 
+app.post('/stripe/webhooks', express.raw({ type: 'application/json' }), stripeWebhook)
+
+app.get('/', (req, res, next) => {
+  res.render('index', { title: 'Express' })
+})
 app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
-
-app.get('/', (req, res, next) => {
-  res.render('index', { title: 'Express' })
-})
-
-app.get('stripe/webhooks', express.raw({ type: 'application/json' }), stripeWebhook)
 
 export default app

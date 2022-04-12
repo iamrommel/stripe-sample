@@ -8,7 +8,7 @@ const SubscriptionSchema = new mongoose.Schema({
   },
   email: String,
   plan: String,
-  price: String,
+  price: Number,
 })
 
 export const SubscriptionModel = mongoose.model('Subscription', SubscriptionSchema)
