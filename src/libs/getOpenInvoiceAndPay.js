@@ -1,4 +1,3 @@
-import { SubscriptionModel } from '../utils/SubscriptionRepository.mjs'
 import { stripe as stripeModule } from '../utils/stripe.mjs'
 import moment from 'moment'
 
@@ -13,7 +12,7 @@ export const getOpenInvoiceAndPay = async ({ startDate, endDate }, { stripe = st
   const startDateUnix = moment(startDate).unix()
   const endDateUnix = moment(endDate).unix()
 
-  //because we cannot search by using the status (stutus is not part of the query field), so we just return the all results and filter it out manually
+  //because we cannot search by using the status (status is not part of the query field), so we just return the all results and filter it out manually
   for await (const invoice of stripe.invoices.search({
     query: `created>=${startDateUnix} AND created<=${endDateUnix}`,
     limit: 50,

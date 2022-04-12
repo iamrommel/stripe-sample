@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a74a381b-63b5-4f4d-9c80-5c8834b254fb" name="Changes" comment="Added the test for customer subcsription created">
-      <change afterPath="$PROJECT_DIR$/src/libs/getOpenInvoiceAndPay.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/getOpenInvoiceAndPay.spec.mjs" afterDir="false" />
+    <list default="true" id="a74a381b-63b5-4f4d-9c80-5c8834b254fb" name="Changes" comment="updated the invoices">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mocha-register.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/mocha-register.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/libs/getOpenInvoiceAndPay.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/getOpenInvoiceAndPay.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTTP Request" />
       </list>
     </option>
   </component>
@@ -40,28 +40,28 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.14.2",
-    "javascript.nodejs.core.library.typings.version": "16.11.26",
-    "last_opened_file_path": "/Users/iamrommel/github.com/stripe-sample/src/utils",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.mocha.mocha_node_package_dir": "/Users/iamrommel/github.com/stripe-sample/node_modules/mocha",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "/Users/iamrommel/github.com/stripe-sample/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.14.2&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.26&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/iamrommel/github.com/stripe-sample/src/utils&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.mocha.mocha_node_package_dir&quot;: &quot;/Users/iamrommel/github.com/stripe-sample/node_modules/mocha&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/iamrommel/github.com/stripe-sample/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/utils" />
@@ -72,52 +72,28 @@
       <recent name="$PROJECT_DIR$/utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Mocha.getOpenInvoiceAndPay">
-    <configuration name="customerSubscriptionCreated" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/src/libs/customerSubscriptionCreated.spec.mjs</test-file>
-      <test-names>
-        <name value="customerSubscriptionCreated" />
-      </test-names>
+  <component name="RunManager" selected="HTTP Request.stripe-sample | #1">
+    <configuration name="stripe-sample | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/stripe-sample.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="customerSubscriptionCreated.should be able to store to database with correct value" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/src/libs/customerSubscriptionCreated.spec.mjs</test-file>
-      <test-names>
-        <name value="customerSubscriptionCreated" />
-        <name value="should be able to store to database with correct value" />
-      </test-names>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
-    <configuration name="customerSubscriptionCreated.should throw error when there is no email defined" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/src/libs/customerSubscriptionCreated.spec.mjs</test-file>
-      <test-names>
-        <name value="customerSubscriptionCreated" />
-        <name value="should throw error when there is no email defined" />
-      </test-names>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="getOpenInvoiceAndPay" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
@@ -152,20 +128,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Mocha.customerSubscriptionCreated" />
-      <item itemvalue="Mocha.customerSubscriptionCreated.should be able to store to database with correct value" />
-      <item itemvalue="Mocha.customerSubscriptionCreated.should throw error when there is no email defined" />
+      <item itemvalue="HTTP Request.stripe-sample | #1" />
       <item itemvalue="Mocha.getOpenInvoiceAndPay" />
       <item itemvalue="Mocha.getOpenInvoiceAndPay.should be able to store to database with correct value" />
       <item itemvalue="Node.js.bin/www" />
+      <item itemvalue="npm.dev" />
+      <item itemvalue="npm.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.stripe-sample | #1" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.test" />
         <item itemvalue="Mocha.getOpenInvoiceAndPay" />
         <item itemvalue="Mocha.getOpenInvoiceAndPay.should be able to store to database with correct value" />
-        <item itemvalue="Mocha.customerSubscriptionCreated" />
-        <item itemvalue="Mocha.customerSubscriptionCreated.should throw error when there is no email defined" />
-        <item itemvalue="Mocha.customerSubscriptionCreated.should be able to store to database with correct value" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +153,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649769916425</updated>
-      <workItem from="1649769917567" duration="17326000" />
+      <workItem from="1649769917567" duration="17880000" />
+      <workItem from="1649790877557" duration="945000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1649770297994</created>
@@ -221,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649787485077</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updated the invoices">
+      <created>1649790250731</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649790250731</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +231,8 @@
     <MESSAGE value="udpated the code" />
     <MESSAGE value="added the sample implementation" />
     <MESSAGE value="Added the test for customer subcsription created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the test for customer subcsription created" />
+    <MESSAGE value="updated the invoices" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated the invoices" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

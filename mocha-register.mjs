@@ -2,7 +2,6 @@ import 'dotenv/config'
 import * as chai from 'chai'
 import chaiSubset from 'chai-subset'
 import chaiAsPromised from 'chai-as-promised'
-import { initDb } from './src/utils/initDb.mjs'
 import mongoose from 'mongoose'
 import { MongoMemoryServer } from 'mongodb-memory-server'
 
