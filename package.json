@@ -4,9 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node ./bin/www",
-    "dev": "concurrently \"nodemon ./bin/www.mjs\" \"npm:stripe\"",
-    "stripe": "stripe listen --forward-to localhost:5002/stripe/webhooks --skip-verify"
+    "start": "node src/bin/www",
+    "dev": "concurrently \"nodemon src/bin/www.mjs\" \"npm:stripe\"",
+    "stripe": "stripe listen --forward-to localhost:5002/stripe/webhooks --skip-verify",
+    "test": "mocha  src/**/*.spec.mjs  --exit"
+
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -21,6 +23,12 @@
     "stripe": "^8.216.0"
   },
   "devDependencies": {
-    "concurrently": "^7.1.0"
+    "concurrently": "^7.1.0",
+    "testdouble": "^3.16.1",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "chai-subset": "^1.6.0",
+    "mocha": "^9.2.1",
+    "mongodb-memory-server" : "^8.4.2"
   }
 }

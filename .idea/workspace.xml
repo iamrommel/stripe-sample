@@ -4,15 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a74a381b-63b5-4f4d-9c80-5c8834b254fb" name="Changes" comment="udpated the code">
-      <change afterPath="$PROJECT_DIR$/utils/stripe.mjs" afterDir="false" />
+    <list default="true" id="a74a381b-63b5-4f4d-9c80-5c8834b254fb" name="Changes" comment="added the sample implementation">
+      <change afterPath="$PROJECT_DIR$/.mocharc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mocha-register.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/customerSubscriptionCreated.spec.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/hasSubscription.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/hasSubscription.spec.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/hasSubscriptionRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/testUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/app.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/onNewStripeSubscription.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/libs/customerSubscriptionCreated.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/www.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/www.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/customerSubscriptionCreated.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/customerSubscriptionCreated.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/stripe-webhook.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/routes/stripe-webhook.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/SubscriptionRepository.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/utils/SubscriptionRepository.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/stripe-webhook.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/stripe-webhook.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/SubscriptionRepository.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/SubscriptionRepository.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/initDb.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/initDb.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/stripe.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/stripe.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,11 +64,12 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "16.14.2",
     "javascript.nodejs.core.library.typings.version": "16.11.26",
-    "last_opened_file_path": "/Users/iamrommel/github.com/stripe-sample",
+    "last_opened_file_path": "/Users/iamrommel/github.com/stripe-sample/src/utils",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.mocha.mocha_node_package_dir": "/Users/iamrommel/github.com/stripe-sample/node_modules/mocha",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "yarn",
     "prettierjs.PrettierConfiguration.Package": "/Users/iamrommel/github.com/stripe-sample/node_modules/prettier",
@@ -67,30 +79,102 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/utils" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/utils" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
-    <configuration name="stripe | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/stripe.http" index="2" requestIdentifier="#2" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Mocha.customerSubscriptionCreated">
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="dev" />
+        <script value="test" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="customerSubscriptionCreated" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/src/libs/customerSubscriptionCreated.spec.mjs</test-file>
+      <test-names>
+        <name value="customerSubscriptionCreated" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="customerSubscriptionCreated.should be able to store to database with correct value" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/src/libs/customerSubscriptionCreated.spec.mjs</test-file>
+      <test-names>
+        <name value="customerSubscriptionCreated" />
+        <name value="should be able to store to database with correct value" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="customerSubscriptionCreated.should throw error when there is no email defined" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/src/libs/customerSubscriptionCreated.spec.mjs</test-file>
+      <test-names>
+        <name value="customerSubscriptionCreated" />
+        <name value="should throw error when there is no email defined" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="hasSubscription" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/src/libs/hasSubscription.spec.mjs</test-file>
+      <test-names>
+        <name value="hasSubscription" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Mocha.customerSubscriptionCreated" />
+      <item itemvalue="Mocha.customerSubscriptionCreated.should be able to store to database with correct value" />
+      <item itemvalue="Mocha.customerSubscriptionCreated.should throw error when there is no email defined" />
+      <item itemvalue="Mocha.hasSubscription" />
+      <item itemvalue="Node.js.bin/www" />
+      <item itemvalue="npm.test" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
-        <item itemvalue="HTTP Request.stripe | #2" />
+        <item itemvalue="Mocha.customerSubscriptionCreated" />
+        <item itemvalue="Mocha.customerSubscriptionCreated.should throw error when there is no email defined" />
+        <item itemvalue="Mocha.customerSubscriptionCreated.should be able to store to database with correct value" />
+        <item itemvalue="Mocha.hasSubscription" />
+        <item itemvalue="npm.test" />
       </list>
     </recent_temporary>
   </component>
@@ -102,7 +186,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649769916425</updated>
-      <workItem from="1649769917567" duration="9371000" />
+      <workItem from="1649769917567" duration="14582000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1649770297994</created>
@@ -132,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649775866344</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added the sample implementation">
+      <created>1649782428895</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649782428895</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +247,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="done the basic setup of db and function to be called when subscription hook happens" />
     <MESSAGE value="udpated the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="udpated the code" />
+    <MESSAGE value="added the sample implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the sample implementation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,0 +1,6 @@
+{
+  "require": "./mocha-register.mjs",
+  "extension": ["js", "cjs", "mjs"],
+  "timeout": 20000,
+  "watch-ignore": ["node_modules"]
+}
